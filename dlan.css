@@ -1,0 +1,111 @@
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Centered container */
+form {
+    background-color: #ffffff; /* White background for form */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 400px; /* Limit maximum width */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Form header */
+h1 {
+    text-align: center;
+    color: #007bff; /* Blue text color */
+    font-size: 1.5em; /* Responsive font size */
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    color: #007bff; /* Blue text color */
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #ff4c4c; /* Red background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #c74343; /* Darker red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2em; /* Smaller font size on smaller screens */
+    }
+
+    form {
+        padding: 15px; /* Adjust padding on smaller screens */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        padding: 8px; /* Adjust padding on smaller screens */
+    }
+
+    input[type="submit"] {
+        font-size: 14px; /* Smaller font size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1em; /* Smaller font size on extra-small screens */
+    }
+
+    form {
+        padding: 10px; /* Further adjust padding on extra-small screens */
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        padding: 6px; /* Further adjust padding on extra-small screens */
+    }
+
+    input[type="submit"] {
+        font-size: 12px; /* Further reduce font size on extra-small screens */
+    }
+}
